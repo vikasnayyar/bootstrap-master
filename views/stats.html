@@ -1,0 +1,128 @@
+<ul class="breadcrumb projectnav">
+    <li class="dropdown user-dropdown"> PERIOD:
+        <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-up"></i> Last 30 Days</a>
+        <ul class="dropdown-menu">
+            <li><a href="" ng-click='reverse = true'><i class="fa fa-caret-up"></i> Last 30 Days</a></li>
+            <li><a href="" ng-click='reverse = false'><i class="fa fa-caret-down"></i> Last 30 Days</a></li>
+        </ul>
+    </li>
+</ul>
+
+<div class="col-md-12">
+    <div class="panel panel-default ">
+        <div class="panel-body">
+            <h4 class="text-center">Your Statistics</h4>
+            <div class="row">
+                <div class="col-md-9"><div id="graph-area-line" style="height:300px;"></div></div>
+                <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-4 no-margin text-right gb"><h1>165</h1></div>
+                            <div class="col-md-8 h4"><strong>SESSIONS</strong></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 no-margin text-right gb"><h1>6780</h1></div>
+                            <div class="col-md-8 h4"><strong>CUMULATIVE MINUTES</strong></div>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 pillars">
+                    <div class="blue pull-left" style="margin-right:65px;min-width:130px;"><h1>12</h1> <strong>PROJECT UPDATED</strong> <br/>
+                        <span sparkbarwidth="5" sparkheight="45" sparkwidth="130" sparkbarcolor="#2293d5" sparktype="bar" class="sparkline">5,4,3,2,4,5,6,7,8,6,4,5,5,4,3,2,4,5,6,7,8,6</span>
+                    </div>
+                    <div class="green pull-left" style="margin-right:65px;min-width:130px;"><h1>84</h1> <strong>BUILDS</strong><br/>
+                        <span sparkbarwidth="5" sparkheight="45" sparkwidth="100" sparkbarcolor="#7cc687" sparktype="bar" class="sparkline">5,4,3,2,4,5,6,7,8,6,4,5,5,4,3,2,4,5,6,7,8,6</span>
+                    </div>
+                    <div class="green pull-left" style="margin-right:65px;min-width:130px;"><h1>57</h1> <strong>RUNS</strong> <br/>
+                        <span sparkbarwidth="5" sparkheight="45" sparkwidth="100" sparkbarcolor="#7cc687" sparktype="bar" class="sparkline">5,4,3,2,4,5,6,7,8,6,4,5,5,4,3,2,4,5,6,7,8,6</span>
+                    </div>
+                    <div class="green pull-left" style="margin-right:65px;min-width:130px;"><h1>5</h1> <strong>DEBUGS</strong> <br/>
+                        <span sparkbarwidth="5" sparkheight="45" sparkwidth="100" sparkbarcolor="#7cc687" sparktype="bar" class="sparkline">5,4,3,2,4,5,6,7,8,6,4,5,5,4,3,2,4,5,6,7,8,6</span>
+                    </div>
+                    <div class="violet pull-left" style="margin-right:65px;min-width:130px;"><h1>5</h1> <strong>DEPLOYS</strong> <br/>
+                        <span sparkbarwidth="5" sparkheight="45" sparkwidth="100" sparkbarcolor="#bd8fc0" sparktype="bar" class="sparkline">5,4,3,2,4,5,6,7,8,6,4,5,5,4,3,2,4,5,6,7,8,6</span>
+                    </div>
+                    <div class="blue pull-left" style="margin-right:65px;min-width:130px;"><h1>5</h1> <strong>FACTORIES</strong> <br/>
+                        <span sparkbarwidth="5" sparkheight="45" sparkwidth="100" sparkbarcolor="#2293d5" sparktype="bar" class="sparkline">5,4,3,2,4,5,6,7,8,6,4,5,5,4,3,2,4,5,6,7,8,6</span>
+                    </div>
+                    <div class="blue pull-left" style="margin-right:65px;min-width:130px;"><h1>5</h1> <strong>COLLABRATIVE SESSIONS</strong> <br/>
+                        <span sparkbarwidth="5" sparkheight="45" sparkwidth="100" sparkbarcolor="#2293d5" sparktype="bar" class="sparkline">5,4,3,2,4,5,6,7,8,6,4,5,5,4,3,2,4,5,6,7,8,6</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12 lowerStats">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-default ">
+                <div class="panel-body">
+                    <h4 class="text-center">Build Statics</h4>
+                    <div class="row">
+                        <div class="col-md-3 no-margin text-right"><h1 class="orange">13.54</h1></div>
+                        <div class="col-md-9 txtBold" style="padding-top:8px">
+                            <span class="txtBold">TIME SPENT IN BUILD WAIT QUEUE<br/></span>
+                            <span class="txtNormal">Upgrade (soon) to get a dedicated queue.</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 no-margin text-right"><h1 class="garrow">3.54</h1></div>
+                        <div class="col-md-9 txtNormal" style="padding-top:8px">
+                           <span class="txtBold"> TIME SPENT BUILDING PROJECTS</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 no-margin text-right"><h1 class="orange">13</h1></div>
+                        <div class="col-md-9" style="padding-top:8px">
+                            <span class="txtBold">BUILD TERMINATIONS DUE TO THRESHOLD TIMEOUT</span><br/>
+                           <span class="txtNormal"> Upgrade (soon) to increase build timeout threshold</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default ">
+                <div class="panel-body">
+                    <h4 class="text-center">Run Statics</h4>
+                    <div class="row">
+                        <div class="col-md-3 no-margin text-right"><h1 class="orange">13.54</h1></div>
+                        <div class="col-md-9 txtBold" style="padding-top:8px">
+                           <span class="txtBold"> TIME SPENT IN RUNNER WAIT QUEUE</span><br/>
+                            <span class="txtNormal">Upgrade (soon) to get a dedicated queue.</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 no-margin text-right"><h1  class="garrow">1.54</h1></div>
+                        <div class="col-md-9 txtNormal" style="padding-top:8px">
+                            <span class="txtBold">TIME SPENT RUNNING PROJECTS</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 no-margin text-right"><h1 class="orange">23</h1></div>
+                        <div class="col-md-9" style="padding-top:8px">
+                            <span class="txtBold">RUN TERMINATIONS DUE TO THRESHOLD TIMEOUT</span><br/>
+                            <span class="txtNormal">Upgrade (soon) to increase run timeout threshold</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default ">
+                <div class="panel-body">
+                    <h4 class="text-center">Image Statics</h4>
+                    <div class="row">
+                        <div class="col-md-3 no-margin text-right"><h1 class="green">73.54</h1></div>
+                        <div class="col-md-9 " style="padding-top:8px">
+                            <span class="txtBold">TIME SPENT CONFIGURING DOCKER IMAGES</span><br/>
+                            <span class="txtNormal">Upgrade (soon) to increase time before image tear down</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

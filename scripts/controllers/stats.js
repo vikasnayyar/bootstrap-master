@@ -29,9 +29,16 @@ angular.module('odeskApp')
                          xkey: 'x',
                          ykeys: ['z'],
                          labels: ['Z'],
-                         lineColors: ['#66ccff', '#E67A77']});
-            if ($(".sparkline").length > 0) {
-                $(".sparkline").sparkline('html', { enableTagOptions: true, disableHiddenCheck: true});
-            }
-        }, 50);
+						 lineColors: ['#E1E3E2'],
+						 fillOpacity : 1,
+						 grid : false,
+						 goals: [1.0, 0],
+						 pointFillColors:'#ddd',
+						 goalLineColors : ["#E2E2E2", "#E2E2E2"],
+						 });
+            		if ($(".sparkline").length > 0) {
+                	$(".sparkline").sparkline('html', { enableTagOptions: true, disableHiddenCheck: true});
+					//$('.barsparks').sparkline('html', { type:'bar', height:'40px', barWidth:5 });
+            	}
+        		}, 50);
     });
